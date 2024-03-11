@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentiment Analysis Result</title>
+  </head>
+  <body>
+    <h1>Sentiment Analysis Result</h1>
+    <p>Input Text: {{ input_text }}</p>
+    <p>Prediction: {{ prediction }}</p>
+    <p>Number of Angry Words: {{ angry_word_count }}</p>
+    {% if angry_words %}
+    <p>Angry Words: {{ angry_words }}</p>
+    {% endif %}
+  </body>
+</html>
